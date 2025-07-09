@@ -33,7 +33,7 @@ public class Problem {
         t3.start();
 
         try {
-            t1.join();
+            t1.join();//allows one thread to wait until another thread completes its execution
             t2.join();
             t3.join();
         } catch (InterruptedException e) {
